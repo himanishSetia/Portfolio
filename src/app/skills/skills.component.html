@@ -1,0 +1,49 @@
+<div class="skills" [@fadeInOut]>
+  <div class="timeline">
+    <div class="container">
+      <div class="ui-g">
+        <h2>TECHNOLOGIES</h2>
+        <div class="content flex flex-direction-row ui-g-12 ui-sm-12 ui-md-12 ui-lg-12">
+          <div *ngFor="let tech of technologies">
+            <div class="skillBlock" title="{{ tech.title }}">
+              <div class="{{ tech.class }}"></div>
+              <span>{{ tech.name }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="container">
+      <div class="ui-g">
+        <h2>FRAMEWORKS & LIBRARIES</h2>
+        <div class="content flex flex-direction-row ui-g-12 ui-sm-12 ui-md-12 ui-lg-12">
+          <div *ngFor="let frame of frameworks">
+            <div class="skillBlock" title="{{ frame.title }}">
+              <div class="{{ frame.class }}"></div>
+              <span>{{ frame.name }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="container">
+      <div class="ui-g">
+        <h2>TOOLS</h2>
+        <div class="content flex flex-direction-row ui-g-12 ui-sm-12 ui-md-12 ui-lg-12">
+          <div *ngFor="let tool of tools">
+            <div class="skillBlock" title="{{ tool.title }}">
+              <div class="{{ tool.class }}"></div>
+              <span>{{ tool.name }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

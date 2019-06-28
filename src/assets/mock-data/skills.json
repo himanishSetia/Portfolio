@@ -1,0 +1,88 @@
+{
+    "skills": [
+        {
+            "title": "Javascript",
+            "class": "sprite sprite-javascript",
+            "name": "Javascript",
+            "type": "technology"
+        },
+        {
+            "title": "Typescript",
+            "class": "sprite sprite-typescript",
+            "name": "Typescript",
+            "type": "technology"
+        },
+        {
+            "title": "NodeJS",
+            "class": "sprite sprite-nodejs",
+            "name": "NodeJS",
+            "type": "technology"
+        },
+        {
+            "title": "HTML5",
+            "class": "sprite sprite-html",
+            "name": "HTML5",
+            "type": "technology"
+        },
+        {
+            "title": "CSS3",
+            "class": "sprite sprite-css",
+            "name": "CSS3",
+            "type": "technology"
+        },
+        {
+            "title": "Angular",
+            "class": "sprite sprite-angular",
+            "name": "Angular",
+            "type": "libraryAndFramework"
+        },
+        {
+            "title": "AngularJS",
+            "class": "sprite sprite-angularjs",
+            "name": "AngularJS",
+            "type": "libraryAndFramework"
+        },
+        {
+            "title": "Highcharts",
+            "class": "sprite sprite-highcharts",
+            "name": "Highcharts",
+            "type": "libraryAndFramework"
+        },
+        {
+            "title": "Bootstrap",
+            "class": "sprite sprite-bootstrap",
+            "name": "Bootstrap",
+            "type": "libraryAndFramework"
+        },
+        {
+            "title": "AppScript",
+            "class": "sprite sprite-appscript",
+            "name": "AppScript",
+            "type": "libraryAndFramework"
+        },
+        {
+            "title": "NPM",
+            "class": "sprite sprite-npm",
+            "name": "NPM",
+            "type": "tool"
+        },
+        {
+            "title": "Git",
+            "class": "sprite sprite-git",
+            "name": "Git",
+            "type": "tool"
+        },
+        {
+            "title": "Docker",
+            "class": "sprite sprite-docker",
+            "name": "Docker",
+            "type": "tool"
+        },
+        {
+            "title": "VSC",
+            "class": "sprite sprite-vsc",
+            "name": "VSC",
+            "type": "tool"
+        }
+    ]
+}
