@@ -1,1 +1,39 @@
-{}
+{
+    "experience": [
+        {
+            "institute": "Maven Wave Partners",
+            "duration": "April, 2019 -  Present",
+            "details": "",
+            "designation": "Senior Software Engineer",
+            "location": "Gurgaon"
+        },
+        {
+            "institute": "Maven Wave Partners",
+            "duration": "May, 2018 - April, 2019",
+            "details": "",
+            "designation": "Software Engineer",
+            "location": "Gurgaon"
+        },
+        {
+            "institute": "Shephertz Technologies",
+            "duration": "June, 2016 - May, 2018",
+            "details": "",
+            "designation": "Software Developer",
+            "location": "Gurgaon"
+        },
+        {
+            "institute": "Network Bulls",
+            "duration": "June, 2015 - July, 2015",
+            "details": "",
+            "designation": "Intern",
+            "location": "Gurgaon"
+        },
+        {
+            "institute": "Netmax Technologies",
+            "duration": "June, 2013 - July, 2013",
+            "details": "",
+            "designation": "Intern",
+            "location": "Chandigarh"
+        }
+    ]
+}

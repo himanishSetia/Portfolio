@@ -100,6 +100,26 @@
     color: grey;
     font-family: Arial, Helvetica, sans-serif
   }
+
+  .experience-header {
+    position: relative;
+    float: left;
+    color: grey;
+    font-family: Helvetica, sans-serif;
+    padding: 40px 0 0 0;
+  }
+
+  .experience-header::after {
+    content: '';
+    position: absolute;
+    width: 110%;
+    background-color: grey;
+    top: 90%;
+    bottom: 0;
+    // left: 3%;
+    margin-left: -3px;
+    height: 1px;
+  }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {

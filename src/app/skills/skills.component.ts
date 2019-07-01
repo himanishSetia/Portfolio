@@ -8,11 +8,18 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
   animations: [
-    trigger('fadeInOut',[
-      state('void',style({
+    trigger('fadeInOut', [
+      state('void', style({
         opacity: 0
       })),
-      transition('void <=> *',animate(1000))
+      transition('void <=> *', animate(2000))
+    ]),
+    trigger('EnterLeave', [
+      state('flyIn', style({ transform: 'translateX(0)' })),
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('1000ms 300ms ease-in')
+      ]),
     ])
   ]
 })
@@ -20,7 +27,7 @@ export class SkillsComponent implements OnInit {
   frameworks: Skills[] = [];
   technologies: Skills[] = [];
   tools: Skills[] = [];
-  
+
   constructor(private skillService: SkillsService) { }
 
   ngOnInit() {
