@@ -3,7 +3,7 @@
   <div class="container right" *ngFor="let experience of experiences">
     <div class="content">
       <h2 [@LiftUp]>{{ experience.institute }}</h2>
-      <div [@PullDown]>{{ experience.duration }}</div>
+      <div [@PullDown]>{{ experience.designation }}, {{ experience.duration }}</div>
       <p [@fadeInOut]>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
     </div>
   </div>

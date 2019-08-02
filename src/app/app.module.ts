@@ -14,21 +14,41 @@ import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillsService } from './skills/skills.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './contact/contact.component';
+
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
+import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import { AboutComponent } from './about/about.component';
+
+
+
+const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+  suppressScrollX: true
+};
 
 @NgModule({
   declarations: [
     AppComponent,
     ExperienceComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    PerfectScrollbarModule
   ],
-  providers: [SkillsService],
+  providers: [
+    SkillsService, 
+    {
+    provide: PERFECT_SCROLLBAR_CONFIG,
+    useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,11 +1,26 @@
-<div>
-    <router-outlet></router-outlet>
+<div class="p-grid">
+    <div class="p-col-6">
+        <div class="outlet">
+            <div>
+                <!-- <perfect-scrollbar style="max-height: calc(100vh - 10vh); width: 100%" [config]="config"> -->
+                <router-outlet></router-outlet>
+                <!-- </perfect-scrollbar> -->
+            </div>
+
+            <div class="splitBottom">
+                <div class="navigation">
+                    <div 
+                    *ngFor="let menu of menu; let i = index" 
+                    routerLink="{{menu.link}}"
+                    [class]="menu.class"
+                    [class.active]="selectedIndex === i"
+                    (click)="setIndex(i)">
+                    <span>{{ menu.name }}</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-col-6 staticImage">
+    </div>
 </div>
-<!-- 
-<div class="container cyan brackets">
-    <a>HOME</a>
-    <a>ARTICLES</a>
-    <a>PORTFOLIO</a>
-    <a>ABOUT</a>
-    <a>CONTACT</a>
-  </div> -->
